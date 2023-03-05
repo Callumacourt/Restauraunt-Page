@@ -15,20 +15,22 @@ body {
 }
 
 .dishImage {
-  height: 11vh;
+  height: 100%;
   width: 85%;
   border-radius: 100vmin;
   border: 3px solid orange;
 }
 
 .dishWrapper {
-  background-color: darkred;
+  background-color: palegoldenrod;
+  width: 20vw;
   border-radius: 4vmin;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1vmin;
-  color: white;
+  color: black;
+  font-style: italic;
 }
 
 .tabNav {
@@ -74,6 +76,10 @@ body {
   width: 50vw;
 }
 
+.info {
+  height: fit-content;
+}
+
 .addressWrapper,
 .phoneWrapper {
   display: flex;
@@ -91,18 +97,19 @@ body {
 }
 
 .menu {
-  max-height: 60vh;
   display: grid;
-  overflow: scroll;
-  overflow-y: auto;
-  overflow-x: auto;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2vh;
   justify-items: center;
-  grid-template-rows: 10vh 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  height: fit-content;
 }
 
 .menuHeader {
-  grid-column: 1/4;
+  grid-column: 1/3;
+  color: black;
+  font-weight: bold;
+  font-style: oblique;
+  text-decoration: underline;
 }
 
 .sale {
@@ -130,3 +137,4 @@ body {
   height: 100%;
   z-index: -1;
 }
+
